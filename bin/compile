@@ -4,9 +4,8 @@ indent() {
   sed -u 's/^/       /'
 }
 
-echo "-----> Install Noto SC font"
-mkdir ~/.fonts
+echo "-----> Install Chinese fonts"
 
-curl -s -o ~/.fonts/NotoSansSC-Regular.otf https://d2eqfri47xfodf.cloudfront.net/assets/fonts/NotoSansSC-Regular.otf
+sudo apt-get install fonts-wqy-zenhei
 
 fc-cache -f -v
